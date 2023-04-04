@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.name h1 {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: gray;
+}
+
+nav a::after {
+    background-color: blanchedalmond;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Make the content div responsive */
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: white;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+ul#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul#menu li {
+    display: inline-block;
+    margin: 0;
+}
+
+ul#menu li a {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: gray;
+}
+
+
+/* Responsive styles for paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Make the menu full-width and vertical */
+    ul#menu {
+        display: block;
+    }
+
+    ul#menu li {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    /* Adjust font-size for smaller screens */
+    p {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
